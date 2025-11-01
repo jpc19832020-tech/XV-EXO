@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   // Configuración para exportación estática a GitHub Pages
   output: 'export',
   trailingSlash: true,
-  // basePath: '/nombre-del-repositorio', // Descomentar y reemplazar con el nombre de tu repositorio
+  basePath: '/XV-EXO', // Reemplazar con el nombre de tu repositorio
   images: {
     unoptimized: true, // Necesario para exportación estática
   },
