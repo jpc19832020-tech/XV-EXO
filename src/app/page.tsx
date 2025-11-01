@@ -416,8 +416,8 @@ export default function InvitationPage() {
       >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/quinceanera-hero.jpg" 
+          <img
+            src="/XV-EXO/quinceanera-hero.jpg"
             alt="Quinceañera Celebration"
             className="w-full h-full object-cover"
           />
@@ -982,8 +982,8 @@ export default function InvitationPage() {
             <h3 className="text-2xl font-bold mb-6 text-yellow-300 text-center">Escanea el QR</h3>
             
             <div className="bg-white p-4 rounded-xl mb-6">
-              <img 
-                src="/yape-qr.png" 
+              <img
+                src="/XV-EXO/yape-qr.png"
                 alt="Yape QR Code"
                 className="w-full h-auto"
               />
