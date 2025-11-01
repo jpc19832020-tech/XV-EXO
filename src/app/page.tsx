@@ -43,48 +43,48 @@ export default function InvitationPage() {
   // Variantes de animación
   const fadeInUp = {
     hidden: { opacity: 0, y: 60 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.8, ease: "easeOut" as const }
     }
   }
 
   const fadeInLeft = {
     hidden: { opacity: 0, x: -60 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       x: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.8, ease: "easeOut" as const }
     }
   }
 
   const fadeInRight = {
     hidden: { opacity: 0, x: 60 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       x: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.8, ease: "easeOut" as const }
     }
   }
 
   const scaleIn = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.8, ease: "easeInOut" }
     }
   }
 
   // Fotos de ejemplo para la galería
   const galleryImages = [
-    { id: 1, title: "Mi Infancia", description: "Momentos preciosos que nunca olvidaré", image: "/gallery/quince1.webp" },
-    { id: 2, title: "Familia", description: "El amor que me fortalece cada día", image: "/gallery/quince2.webp" },
-    { id: 3, title: "Amigas", description: "Las compañeras de todas mis aventuras", image: "/gallery/quince3.webp" },
-    { id: 4, title: "Sueños", description: "Metas que estoy lista para alcanzar", image: "/gallery/quince4.webp" },
-    { id: 5, title: "Bailando", description: "Mi pasión y alegría de vivir", image: "/gallery/quince5.webp" },
-    { id: 6, title: "Celebrando", description: "La vida es para festejarla", image: "/gallery/quince6.webp" }
+    { id: 1, title: "Mi Infancia", description: "Momentos preciosos que nunca olvidaré", image: "/XV-EXO/gallery/quince1.webp" },
+    { id: 2, title: "Familia", description: "El amor que me fortalece cada día", image: "/XV-EXO/gallery/quince2.webp" },
+    { id: 3, title: "Amigas", description: "Las compañeras de todas mis aventuras", image: "/XV-EXO/gallery/quince3.webp" },
+    { id: 4, title: "Sueños", description: "Metas que estoy lista para alcanzar", image: "/XV-EXO/gallery/quince4.webp" },
+    { id: 5, title: "Bailando", description: "Mi pasión y alegría de vivir", image: "/XV-EXO/gallery/quince5.webp" },
+    { id: 6, title: "Celebrando", description: "La vida es para festejarla", image: "/XV-EXO/gallery/quince6.webp" }
   ]
 
   useEffect(() => {
