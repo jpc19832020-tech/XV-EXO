@@ -102,9 +102,15 @@ export default function InvitationPage() {
     }
   }, [loading])
 
-  // Control de música
+  // Control de música (simulado para versión estática)
   const toggleMusic = () => {
     setIsMusicPlaying(!isMusicPlaying)
+    // En versión estática, solo cambiamos el estado visual
+    if (!isMusicPlaying) {
+      showCustomToast('🎵 Música activada (simulada en versión estática)')
+    } else {
+      showCustomToast('🔇 Música desactivada')
+    }
   }
 
   // Función para mostrar toast
@@ -478,7 +484,7 @@ export default function InvitationPage() {
               className="bg-white/10 backdrop-blur-md rounded-xl p-4 text-center"
             >
               <div className="text-3xl md:text-4xl font-bold text-yellow-300">
-                {value.toString().padStart(2, '0')}
+                {String(value).padStart(2, '0')}
               </div>
               <div className="text-sm text-pink-100 capitalize">
                 {unit === 'days' ? 'Días' : unit === 'hours' ? 'Horas' : unit === 'minutes' ? 'Minutos' : 'Segundos'}

@@ -5,7 +5,13 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // 禁用 Next.js 热重载，由 nodemon 处理重编译
+  // Configuración para exportación estática a GitHub Pages
+  output: 'export',
+  trailingSlash: true,
+  // basePath: '/nombre-del-repositorio', // Descomentar y reemplazar con el nombre de tu repositorio
+  images: {
+    unoptimized: true, // Necesario para exportación estática
+  },
   reactStrictMode: false,
   webpack: (config, { dev }) => {
     if (dev) {
